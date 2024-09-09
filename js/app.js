@@ -127,7 +127,7 @@ async function onContactSubmit(event){
 //send thankyou email for user
 async function sendThankYouEmail(data){
     try{
-        const emailResponse = await emailjs.send('portfolio_service', 'thankyou_email', data);
+        await emailjs.send('portfolio_service', 'thankyou_email', data);
     }catch(error){
         console.error(error);
     }
@@ -136,10 +136,17 @@ async function sendThankYouEmail(data){
 //send notification email to yourself
 async function sendNotificationEmail(data){
     try{
-        const emailResponse = await emailjs.send('portfolio_service', "notification_email", data);
+        await emailjs.send('portfolio_service', "notification_email", data);
     }catch(error){
         console.error(`${error}`);
         return false;
     }
     return false;
 }
+
+// To initialize EmailJS with your public key
+function initializeEmailJS() {
+    emailjs.init('HUcLo3PHd1KurlJOe');
+}
+
+initializeEmailJS();

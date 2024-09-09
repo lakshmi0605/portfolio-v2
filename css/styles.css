@@ -765,6 +765,53 @@ body.light-theme {
   text-align: center;
   font-size: var(--smaller-font-size);
 }
+/* Infinite Horizontal scrolling */
+/* .topics{
+  text-align:center;
+  margin:2rem 0;
+  color:var(--second-color)
+}
+
+.scroll-container {
+  position: relative;
+  width: 70vw;
+  margin:0 auto;
+  height:5vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: flex;
+  justify-content:space-around;
+  position: absolute;
+  white-space:nowrap;
+  width:200%;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+.scroll-content:hover{
+  animation-play-state:paused;
+}
+
+@keyframes scroll-horizontal{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-20%); /* Move left by 50% (half of the total content width) */
+  }
+}
+
+.scroll-item{
+  background-color:var(--first-color);
+  padding:10px;
+  width:fit-content;
+  color:black;
+} */
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
