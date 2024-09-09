@@ -141,7 +141,7 @@ async function sendNotificationEmail(data){
         console.error(`${error}`);
         return false;
     }
-    return false;
+    return true;
 }
 
 // To initialize EmailJS with your public key
